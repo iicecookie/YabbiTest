@@ -1,0 +1,15 @@
+package colorTable
+
+type Color int
+
+const (
+	White Color = iota + 1
+	Blue
+	Blue1
+	Blue2
+	Blue3
+)
+
+func (c Color) String() string {
+	return [...]string{"White", "Blue", "Blue1", "Blue2"}[c]
+}
